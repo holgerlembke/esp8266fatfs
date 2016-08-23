@@ -7,8 +7,7 @@ This implements the FatFs Generic FAT File System Module to work with the ESP826
 
 So you get a full working fat file system with folders and files.
 
-The price you pay is (perhaps) heavy use of flashEraseSector and so an early death of your
-ESP8266 flash memory chip. You have been warned! 
+The price you pay is (perhaps) heavy use of flashEraseSector followed by an early death of your ESP8266 flash memory chip. You have been warned! 
 
 ### Really that bad? ###
 
@@ -24,7 +23,7 @@ To get a genuine FatFs copy go to http://elm-chan.org/fsw/ff/00index_e.html. You
 
 By default it reuses the space used by SPIFFS with the FatFs filesystem.
 
-If it finds a ESP8266 with more than 4MB flash it will use that flash for file system.
+If it finds a ESP8266 with more than 4MB flash it will use that flash for file system. This gives you the default SPIFFS layout plus a huge 4-12 MB fat file system.
 
 
 
